@@ -24,9 +24,9 @@ html {
 header {
   position: sticky;
   top: -65px;
-  /* sticks to top of the viewport */
+  
   z-index: 1000;
-  /* stays above other elements */
+  
 
 }
 
@@ -55,7 +55,7 @@ p {
   text-align: center;
   width: 300px;
   margin: 0 auto;
-  /* centers the block element */
+  
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
@@ -206,9 +206,9 @@ nav {
 .Page-border {
     border-radius: 2px;
     border: 2px solid rgb(176, 133, 237);
-    width: 100%;  /* ensure full width */
-    box-sizing: border-box; /* include border inside width */
-    position: relative; /* no sticky needed unless you want it fixed at top */
+    width: 100%; 
+    box-sizing: border-box;
+    position: relative; 
 }
 
 main {
@@ -248,7 +248,7 @@ main {
 
 
 .container:hover .song-title {
-  opacity: 1; /* appear on hover */
+  opacity: 1; 
 }
 
 section {
@@ -292,7 +292,7 @@ section img:hover {
 
 
 
-/* WEIRD RANDOM BOXES WITH TITLES THAT APPEAR WHEN YOU HOVER UNDER AN ALBUM COVER  */
+/* WEIRD RANDOM BOXES WITH TITLES THAT APPEAR WHEN YOU HOVER UNDER AN ALBUM COVER (not anymore unfortunately)  */
 
 .song-title {
   color: white;
@@ -402,13 +402,13 @@ footer small {
   color: aliceblue;
 
   background: linear-gradient(270deg, #4d4d4d, #adadad, #e7e7e7);
-  /* your gradient colors */
+  
   background-size: 600% 600%;
   animation: gradientMove 40s ease infinite;
 
   display: flex;
   flex-direction: column;
-  /* make sure it covers the full page */
+  
 }
 
 
