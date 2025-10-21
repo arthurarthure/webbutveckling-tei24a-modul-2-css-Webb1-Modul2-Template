@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Music Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="Igor-body">
+    <header>
+        <nav>
+        
+            <div class="website-title">
+                <h2 class="Main-title">MUSIC🎵</h2>
+            <div class="inside-nav">
+                   <div class="Home-button">
+                      <span class="rounded-box">
+                        <a href="index.html">Home</a>
+                      </span>
+                      
+                   </div>
+
+                   <div class="about-us-button">
+                      <span class="rounded-box2">
+                        <a href="About.html">About us</a>
+                      </span>
+                      
+                   </div>
+
+                   
+            </div>
+
+            </div>
+            
+        </nav>
+
+    </header>
+
+    <main class="Igor-main">
+        <div class="Igor-top-container">
+            <div><img src="Images/Igorr.jpg"></div>
+              <div class="Igor-album-details">
+                
+                  <h1 class="Igor-title">IGOR</h1>
+                     <p class="Igor-album-info"><a href="https://open.spotify.com/artist/4V8LLVI7PbaPR0K2TGSxFF" target="_blank">
+                        Tyler, The Creator</a> • 2019 • 12 songs, 39 min 46 sec
+                     </p>
+
+
+              </div>
+
+              
+
+
+        </div>
+        
+        
+        <div class="Audio-container">
+              <div class="player">
+    <h3 id="now-playing">NOW PLAYING: —</h3>
+
+    <ul class="playlist">
+      <li data-src="MUSIC/IGORS_THEME.mp3">
+        1. IGOR'S THEME <span class="duration">3:20</span>
+      </li>
+      <li data-src="MUSIC/EARFQUAKE.mp3">
+        2. EARFQUAKE <span class="duration">3:10</span>
+      </li>
+      <li data-src="MUSIC/I-THINK.mp3">
+        3. I THINK <span class="duration">3:32</span>
+      </li>
+      <li data-src="MUSIC/EXACTLY.mp3">
+        4. EXACTLY WHAT YOU RUN FROM YOU END UP CHASING <span class="duration">0:14</span>
+      </li>
+      <li data-src="MUSIC/RUNNING.mp3">
+        5. RUNNING OUT OF TIME <span class="duration">2:57</span>
+      </li>
+      <li data-src="MUSIC/WAND.mp3">
+        6. NEW MAGIC WAND <span class="duration">3:15</span>
+      </li>
+      <li data-src="MUSIC/BOYGUN.mp3">
+        7. A BOY IS A GUN* <span class="duration">3:30</span>
+      </li>
+      <li data-src="MUSIC/PUPPET.mp3">
+        8. PUPPET <span class="duration">2:59</span>
+      </li>
+      <li data-src="MUSIC/GOOD.mp3">
+        9. WHAT'S GOOD <span class="duration">3:25</span>
+      </li>
+      <li data-src="MUSIC/GONETHANK.mp3">
+        10. GONE, GONE / THANK YOU <span class="duration">6:15</span>
+      </li>
+      <li data-src="MUSIC/LOVE.mp3">
+        11. I DON'T LOVE YOU ANYMORE <span class="duration">2:41</span>
+      </li>
+      <li data-src="MUSIC/FRIENDS.mp3">
+        12. ARE WE STILL FRIENDS? <span class="duration">4:25</span>
+      </li>
+    </ul>
+
+     <div class="controls">
+            <button id="prev">⏮</button>
+            <button id="play">▶</button>
+            <button id="pause">⏸</button>
+            <button id="next">⏭</button>
+     </div>
+
+        <input type="range" id="progress" value="0" min="0" max="100">
+        <audio id="audio"></audio>
+
+        </div>
+          
+
+   
+
+  
+
+
+
+    </main>
+
+   <script src="script.js"></script>
+
+  
+    
+</body>
+</html>

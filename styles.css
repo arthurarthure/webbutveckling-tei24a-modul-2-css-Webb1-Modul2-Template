@@ -1,0 +1,726 @@
+/*lil things */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(62, 62, 62);
+
+}
+
+
+html {
+  height:1750px;
+}
+
+
+/*general css (index.html/homepage) */
+
+header {
+  position: sticky;
+  top: -65px;
+  /* sticks to top of the viewport */
+  z-index: 1000;
+  /* stays above other elements */
+
+}
+
+p {
+  font-weight: 700;
+}
+
+
+.Au-background {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(34, 34, 34);
+  font-family: Helvetica;
+  color: aliceblue;
+  background: linear-gradient(270deg, #aeaeae, #4e4e4e, #1e1e1e);
+  background-size: 600% 600%;
+  animation: gradientMove 25s ease infinite;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.about-us {
+  color: rgb(255, 147, 255);
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+  /* centers the block element */
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+
+
+body {
+  min-height:100vh;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(34, 34, 34);
+  font-family: Helvetica;
+  color: aliceblue;
+  background: linear-gradient(270deg, #a7a7a7, #999a9b, #565657);
+  background-size: 600% 600%;
+  animation: gradientMove 25s ease infinite;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2px;
+  border: 5px solid rgb(54, 54, 54);
+}
+
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+
+
+
+
+
+}
+
+.Main-title {
+  text-align: center;
+  color: #808080;
+}
+
+/* NAVIGATION THINGYs */
+
+nav {
+
+
+  font-family: Helvetica;
+  font-weight: 650;
+  color: rgb(204, 204, 204);
+  align-items: center;
+  justify-content: center;
+
+
+
+
+
+
+
+}
+
+.website-title {
+  background: linear-gradient(to bottom, #ffffff, #919191);
+  padding: 0.5%;
+  height: 2%;
+
+
+
+}
+
+.inside-nav {
+  background: rgb(138, 138, 138);
+  padding: 1%;
+  border-radius: 4px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+
+
+
+
+}
+
+
+
+.rounded-box {
+  background-color: rgb(205, 194, 255);
+  border-radius: 12px;
+  padding: 2px 6px;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 1.2s, color 1.7s, 0.5s;
+  transform: scale(1);
+
+
+}
+
+.rounded-box:hover {
+  background-color: rgb(83, 123, 255);
+  transform: scale(1.1);
+
+}
+
+
+.about-us-button {
+  border-radius: 100%;
+  padding: 2px 6px;
+  background-color: rgb(62, 62, 62);
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 1.2s, color 1.7s, 0.5s;
+  transform: scaleX(0.3);
+
+
+
+}
+
+.about-us-button:hover {
+  background-color: rgb(83, 123, 255);
+  transform: scaleX(1);
+  border-radius: 12px;
+  color: black;
+}
+
+
+
+
+
+/* ALBUM SECTIONS/ROWS */
+
+
+.four-rows {
+  gap: 20px;
+  display: grid;
+  grid-template-rows:auto;
+
+
+}
+
+.Page-border {
+    border-radius: 2px;
+    border: 2px solid rgb(176, 133, 237);
+    width: 100%;  /* ensure full width */
+    box-sizing: border-box; /* include border inside width */
+    position: relative; /* no sticky needed unless you want it fixed at top */
+}
+
+main {
+  flex: 1 0 auto;
+  font-size: x-small;
+  background-color: transparent;
+  padding: 20px;
+  height: fit-content;
+}
+
+
+.main-title {
+
+  margin: 2%;
+  text-align: center;
+  color: rgb(185, 185, 185);
+
+}
+
+.divider {
+  width: 75%;
+  height: 1px;
+  background-color: rgb(112, 112, 112);
+  border: none;
+  margin: 20px auto;
+}
+
+
+.container,
+.container2,
+.container3,
+.container4 {
+  
+  position: relative;
+}
+
+
+
+.container:hover .song-title {
+  opacity: 1; /* appear on hover */
+}
+
+section {
+  margin: 1%;
+  font-family: Helvetica;
+  position: relative;
+  background: linear-gradient(grey, rgb(81, 65, 85));
+  padding: 2%;
+  border: solid 1px #939393;
+  border-radius: 8px;
+
+
+}
+
+section h1,
+h2 {
+  color: #ffffff;
+  text-align: start;
+  margin-bottom: 2%;
+}
+
+section img {
+  width: 75%;
+  height: auto;
+  border-radius: 8px;
+  filter: blur(0px);
+  transition: transform 0.7s ease, box-shadow 0.7s ease, filter 0.7s ease;
+  position: relative;
+  
+
+}
+
+section img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px #272727;
+  cursor: pointer;
+  filter: blur(2px);
+
+}
+
+
+
+
+/* WEIRD RANDOM BOXES WITH TITLES THAT APPEAR WHEN YOU HOVER UNDER AN ALBUM COVER  */
+
+.song-title {
+  color: white;
+  font-size: 14px;
+  margin: 2;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.song-artist {
+  color: white;
+  font-size: 10px;
+  margin: 0;
+
+}
+
+.box, .box2, .box3, .box4 {
+  width: 250px;
+  height: 100%;
+  background: black;
+  border-radius: 8px;
+  opacity: 0;
+  transition: transform 0.9s ease, opacity 0.9s ease;
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.box:hover, .box2:hover, .box3:hover, .box4:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+  color: #ffffff;
+}
+
+/* */
+
+
+
+.album-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 10px;
+  position: relative;
+
+
+}
+
+.album-row img {
+  position: relative;
+  width: (320px, 4fr);
+  height: auto;
+  border-radius: 8px;
+  object-fit: scale-down;
+}
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+footer {
+  background-color: #222222;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+
+  
+}
+
+
+footer p {
+  margin: 5px 0;
+  font-size: 11px;
+  font-style: italic;
+  color: #47565a;
+}
+
+footer small {
+  color: #98afb9;
+}
+
+
+
+/*general css (Albums.html) */
+
+
+
+.Igor-body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+  color: aliceblue;
+
+  background: linear-gradient(270deg, #4d4d4d, #adadad, #e7e7e7);
+  /* your gradient colors */
+  background-size: 600% 600%;
+  animation: gradientMove 40s ease infinite;
+
+  display: flex;
+  flex-direction: column;
+  /* make sure it covers the full page */
+}
+
+
+.Igor-website-title {
+  background: linear-gradient(to bottom, #929292, #ffffff);
+  padding: 0.5%;
+
+  height: auto;
+  width: auto;
+}
+
+
+.Igor-Main-title {
+  text-align: center;
+}
+
+.Igor-inside-nav {
+  background: #f8edff;
+  padding: 1%;
+  border-radius: 4px;
+
+
+
+}
+
+
+
+/* ALL TOP CONTAINER INSIDE THE ALBUMS */
+
+
+.Igor-top-container {
+  display: flex;
+  background: linear-gradient(rgb(255, 207, 215), rgb(153, 112, 134), rgb(66, 66, 66));
+  margin: 0px;
+  border-radius: 10px;
+}
+
+.WRC-top-container {
+  display: flex;
+  background: linear-gradient(rgb(195, 151, 174), rgb(27, 34, 104));
+  margin: 0px;
+  border-radius: 10px;
+
+}
+
+.Trick-top-container {
+  display: flex;
+  background: linear-gradient(rgb(202, 182, 232), rgb(71, 52, 27));
+  margin: 0px;
+  border-radius: 10px;
+
+}
+
+.diary-top-container {
+  display: flex;
+  background: linear-gradient(rgb(179, 185, 210), rgb(31, 120, 37));
+  margin: 0px;
+  border-radius: 10px;
+
+}
+
+.Visions-top-container {
+   display: flex;
+  background: linear-gradient(rgb(53, 131, 106), rgb(11, 21, 11));
+  margin: 0px;
+  border-radius: 10px;
+
+}
+
+.CC-top-container {
+   display: flex;
+  background: linear-gradient(rgb(129, 69, 48), rgb(23, 17, 6));
+  margin: 0px;
+  border-radius: 10px;
+
+}
+
+.VDC-top-container {
+   display: flex;
+  background: linear-gradient(rgb(18, 4, 72), rgb(178, 182, 230));
+  margin: 0px;
+  border-radius: 10px;
+
+}
+
+.DAMN-top-container {
+   display: flex;
+  background: linear-gradient(rgb(222, 123, 142), rgb(228, 2, 2));
+  margin: 0px;
+  border-radius: 10px;
+
+}
+
+.Gemini-top-container {
+   display: flex;
+  background: linear-gradient(rgb(5, 50, 102), rgb(198, 202, 238));
+  margin: 0px;
+  border-radius: 10px;
+
+}
+
+.Blonde-top-container {
+  display: flex;
+  background: linear-gradient(rgb(0, 0, 0), rgb(39, 62, 44));
+  margin: 0px;
+  border-radius: 10px;
+}
+
+.Die-Lit-top-container {
+  display: flex;
+  background: linear-gradient(rgb(0, 0, 0), rgb(38, 38, 38));
+  margin: 0px;
+  border-radius: 10px;
+}
+
+.LIR2-top-container {
+  display: flex;
+  background: linear-gradient(rgb(179, 215, 235), rgb(26, 35, 49),rgb(0, 0, 0));
+  margin: 0px;
+  border-radius: 10px;
+}
+
+.Pnd-top-container {
+  display: flex;
+  background: linear-gradient(rgb(255, 255, 255), rgb(84, 86, 64),rgb(0, 0, 0));
+  margin: 0px;
+  border-radius: 10px;
+}
+
+.SS3-top-container {
+   display: flex;
+  background: linear-gradient(rgb(215, 215, 215), rgb(86, 2, 2));
+  margin: 0px;
+  border-radius: 10px;
+
+}
+
+
+
+
+.Igor-main img {
+  width: 400px;
+  border-radius: 10px;
+  margin: 2%;
+
+}
+
+.Igor-album-details {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin: 2%;
+  padding: 5%;
+  max-height: 200px;
+  height: max-content;
+  gap: 80px;
+
+}
+
+
+
+/* ALBUM TITLES */
+
+.Igor-title {
+  color: white;
+  font-size: 150px;
+}
+
+.WRC-title {
+  color: white;
+  font-size: 112px;
+
+}
+
+.VDC-title {
+  color: white;
+  font-size: 80px;
+
+}
+
+
+
+
+.Igor-album-info a {
+  color: rgb(205, 194, 255);
+  display: inline-block;
+  transition: transform 0.4s ease-in-out, color 0.4s ease-in-out;
+  gap: 4px;
+}
+
+.Igor-album-info a:hover {
+  transform: scale(1.0, 2);
+  color: rgb(83, 123, 255);
+}
+
+
+.Igor-album-info {
+
+  font-size: 15px;
+  text-align: center;
+  color: #ececec;
+
+
+
+}
+
+
+/* Player container */
+.player {
+  width: auto;
+  background: rgba(24, 24, 24, 0.9);
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 20px auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Playlist */
+.playlist {
+  list-style: none;
+  padding: 1;
+  margin-bottom: 20px;
+  text-align: start;
+  font-size: 16px;
+}
+
+.playlist li {
+  display: flex;
+  justify-content: space-between;
+  /* song title left, duration right */
+  align-items: center;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.playlist li:hover {
+  background: #282828;
+}
+
+/* Highlight the currently playing song */
+.playlist li.active {
+  background: #e2e2e2;
+  color: rgb(110, 110, 110);
+  font-weight: bold;
+}
+
+.playlist li .duration {
+  font-size: 0.9em;
+  color: #808080;
+}
+
+/* Controls (Prev / Play / Pause / Next) */
+.controls {
+  margin-bottom: 15px;
+}
+
+.controls button {
+  background: none;
+  border: none;
+  color: aliceblue;
+  font-size: 24px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.controls button:hover {
+  color: #a3a3a3;
+}
+
+/* Progress bar */
+input[type="range"] {
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  appearance: none;
+  background: #555;
+  /* fallback track */
+  cursor: pointer;
+}
+
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 3px;
+  background: linear-gradient(to right, #a3a3a3 0%, #555 0%);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #a3a3a3;
+  appearance: none;
+  margin-top: -4px;
+}
+
+
+input[type="range"]::-moz-range-track {
+  height: 6px;
+  border-radius: 3px;
+  background: #555;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #dca4ff;
+  border: none;
+}

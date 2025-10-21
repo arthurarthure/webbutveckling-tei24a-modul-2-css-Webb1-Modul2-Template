@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Music Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="Igor-body">
+    <header>
+
+      <nav>
+        <div class="website-title">
+                <h2 class="Main-title">MUSIC🎵</h2>
+            <div class="inside-nav">
+                   <div class="Home-button">
+                      <span class="rounded-box">
+                        <a href="index.html">Home</a>
+                      </span>
+                      
+                   </div>
+
+                   <div class="about-us-button">
+                      <span class="rounded-box2">
+                        <a href="index.html">About us</a>
+                      </span>
+                      
+                   </div>
+
+                   
+            </div>
+
+            </div>
+            
+        </nav>
+
+    </header>
+
+    <main class="Igor-main">
+        <div class="Pnd-top-container">
+            <div><img src="Images/Pnd.jpg"></div>
+              <div class="Igor-album-details">
+                
+                  <h1 class="WRC-title">PARTYNEXTDOOR</h1>
+                     <p class="Igor-album-info"><a href="https://open.spotify.com/artist/2HPaUgqeutzr3jx5a9WyDV" target="_blank">
+                        PARTYNEXTDOOR </a> • 2013 • 10 songs, 28 min 37 sec
+                     </p>
+
+
+              </div>
+
+              
+
+
+        </div>
+        
+        
+        <div class="Audio-container">
+              <div class="player">
+    <h3 id="now-playing">NOW PLAYING: —</h3>
+
+    <ul class="playlist">
+      <li data-src="MUSIC/Party.mp3">
+        1. Welcome to the Party <span class="duration"> 1:54</span>
+      </li>
+      <li data-src="MUSIC/Wild.mp3">
+        2. Wild Bitches <span class="duration"> 3:35</span>
+      </li>
+      <li data-src="MUSIC/Relax.mp3">
+        3. Relax with Me<span class="duration"> 2:47</span>
+      </li>
+      <li data-src="MUSIC/Now.mp3">
+        4. Right Now <span class="duration"> 4:03</span>
+      </li>
+      <li data-src="MUSIC/Mil.mp3">
+        5. Make a Mil <span class="duration"> 2:51</span>
+      </li>
+      <li data-src="MUSIC/Toronto.mp3">
+        6. Break from Toronto <span class="duration">1:39</span>
+      </li>
+      <li data-src="MUSIC/TBH.mp3">
+        7. TBH <span class="duration">2:03</span>
+      </li>
+      <li data-src="MUSIC/Curious.mp3">
+        8. Wus Good / Curious <span class="duration">3:32</span>
+      </li>
+      <li data-src="MUSIC/Here.mp3">
+        9. Over Here (feat. Drake) <span class="duration">2:57</span>
+      </li>
+      <li data-src="MUSIC/Ballin.mp3">
+        10. Ballin' <span class="duration">3:12</span>
+      </li>
+     
+    </ul>
+
+     <div class="controls">
+            <button id="prev">⏮</button>
+            <button id="play">▶</button>
+            <button id="pause">⏸</button>
+            <button id="next">⏭</button>
+     </div>
+
+        <input type="range" id="progress" value="0" min="0" max="100">
+        <audio id="audio"></audio>
+
+        </div>
+          
+
+   
+
+  
+
+
+
+    </main>
+
+   <script src="script.js"></script>
+
+  
+    
+</body>
+</html>

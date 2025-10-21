@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Music Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="Igor-body">
+    <header>
+
+      <nav>
+        <div class="website-title">
+                <h2 class="Main-title">MUSIC🎵</h2>
+            <div class="inside-nav">
+                   <div class="Home-button">
+                      <span class="rounded-box">
+                        <a href="index.html">Home</a>
+                      </span>
+                      
+                   </div>
+
+                   <div class="about-us-button">
+                      <span class="rounded-box2">
+                        <a href="About.html">About us</a>
+                      </span>
+                      
+                   </div>
+
+                   
+            </div>
+
+            </div>
+            
+        </nav>
+
+    </header>
+
+    <main class="Igor-main">
+        <div class="diary-top-container">
+            <div><img src="Images/diary001.jpg"></div>
+              <div class="Igor-album-details">
+                
+                  <h1 class="Igor-title">diary 001</h1>
+                     <p class="Igor-album-info"><a href="https://open.spotify.com/artist/3l0CmX0FuQjFxr8SK7Vqag" target="_blank">
+                        Clairo </a> • 2018 • 6 songs, 14 min 43 sec
+                     </p>
+
+
+              </div>
+
+              
+
+
+        </div>
+        
+        
+        <div class="Audio-container">
+              <div class="player">
+    <h3 id="now-playing">NOW PLAYING: —</h3>
+
+    <ul class="playlist">
+      <li data-src="MUSIC/Hello.mp3">
+        1. Hello? <span class="duration"> 2:15</span>
+      </li>
+      <li data-src="MUSIC/Cheetos.mp3">
+        2. Flaming Hot Cheetos <span class="duration"> 2:02</span>
+      </li>
+      <li data-src="MUSIC/BOMD.mp3">
+        3. B.O.M.D.<span class="duration"> 2:39</span>
+      </li>
+      <li data-src="MUSIC/4EVER.mp3">
+        4. 4EVER <span class="duration"> 2:39</span>
+      </li>
+      <li data-src="MUSIC/Prettygirl.mp3">
+        5. Pretty Girl <span class="duration"> 2:59</span>
+      </li>
+      <li data-src="MUSIC/How.mp3">
+        6. How (demo) <span class="duration">2:07</span>
+      </li>
+     
+    </ul>
+
+     <div class="controls">
+            <button id="prev">⏮</button>
+            <button id="play">▶</button>
+            <button id="pause">⏸</button>
+            <button id="next">⏭</button>
+     </div>
+
+        <input type="range" id="progress" value="0" min="0" max="100">
+        <audio id="audio"></audio>
+
+        </div>
+          
+
+   
+
+  
+
+
+
+    </main>
+
+   <script src="script.js"></script>
+
+  
+    
+</body>
+</html>

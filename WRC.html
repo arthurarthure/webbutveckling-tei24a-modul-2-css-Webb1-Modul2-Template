@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Music Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="Igor-body">
+    <header>
+
+      <nav>
+        <div class="website-title">
+                <h2 class="Main-title">MUSIC🎵</h2>
+            <div class="inside-nav">
+                   <div class="Home-button">
+                      <span class="rounded-box">
+                        <a href="index.html">Home</a>
+                      </span>
+                      
+                   </div>
+
+                   <div class="about-us-button">
+                      <span class="rounded-box2">
+                        <a href="About.html">About us</a>
+                      </span>
+                      
+                   </div>
+
+                   
+            </div>
+
+            </div>
+            
+        </nav>
+
+    </header>
+
+    <main class="Igor-main">
+        <div class="WRC-top-container">
+            <div><img src="Images/WRC.jpeg"></div>
+              <div class="Igor-album-details">
+                
+                  <h1 class="WRC-title">Who Really Cares</h1>
+                     <p class="Igor-album-info"><a href="https://open.spotify.com/artist/0Y6dVaC9DZtPNH4591M42W" target="_blank">
+                        TV Girl </a> • 2016 • 10 songs, 36 min 55 sec
+                     </p>
+
+
+              </div>
+
+              
+
+
+        </div>
+        
+        
+        <div class="Audio-container">
+              <div class="player">
+    <h3 id="now-playing">NOW PLAYING: —</h3>
+
+    <ul class="playlist">
+      <li data-src="MUSIC/Taking.mp3">
+        1. Taking What's Not Yours <span class="duration"> 3:45</span>
+      </li>
+      <li data-src="MUSIC/Song.mp3">
+        2. Song About Me <span class="duration"> 4:03</span>
+      </li>
+      <li data-src="MUSIC/Cigarettes.mp3">
+        3. Cigarettes out the Window<span class="duration"> 3:18</span>
+      </li>
+      <li data-src="MUSIC/Leave.mp3">
+        4. Till You Tell Me to Leave <span class="duration"> 3:26</span>
+      </li>
+      <li data-src="MUSIC/Allowed.mp3">
+        5. Not Allowed <span class="duration"> 2:47</span>
+      </li>
+      <li data-src="MUSIC/Act.mp3">
+        6. (Do The) Act Like You Never Met Me <span class="duration">4:14</span>
+      </li>
+      <li data-src="MUSIC/Safeword.mp3">
+        7. Safeword <span class="duration">3:36</span>
+      </li>
+      <li data-src="MUSIC/ForYou.mp3">
+        8. For You <span class="duration">3:35</span>
+      </li>
+      <li data-src="MUSIC/Machine.mp3">
+        9. Loving Machine <span class="duration">3:47</span>
+      </li>
+      <li data-src="MUSIC/Heaven.mp3">
+        10. Heaven Is a bedroom <span class="duration">4:38</span>
+      </li>
+     
+    </ul>
+
+     <div class="controls">
+            <button id="prev">⏮</button>
+            <button id="play">▶</button>
+            <button id="pause">⏸</button>
+            <button id="next">⏭</button>
+     </div>
+
+        <input type="range" id="progress" value="0" min="0" max="100">
+        <audio id="audio"></audio>
+
+        </div>
+          
+
+   
+
+  
+
+
+
+    </main>
+
+   <script src="script.js"></script>
+
+  
+    
+</body>
+</html>
